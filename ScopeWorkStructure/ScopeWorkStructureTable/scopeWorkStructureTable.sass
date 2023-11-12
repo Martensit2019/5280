@@ -1,0 +1,37 @@
+@import "@/components/assemblies/AssembliesObjectTable/assembliesObjectTable"
+
+.table_base__tr-heading
+  grid-template-columns: auto auto auto auto auto auto auto auto auto !important
+
+.cell
+  border-left: none
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+
+.resizer
+  position: absolute
+  top: 0
+  right: 0
+  width: 5px
+  height: 50px
+  cursor: col-resize
+  user-select: none
+  border-right: 2px solid transparent
+.resizer:hover,
+.resizing
+  border-right: 1px dashed $color-main
+
+
+.resizer-row
+  bottom: 0
+  left: 0
+  height: 5px
+  cursor: row-resize
+  user-select: none
+  border-bottom: 1px dashed $color-main
+  border-bottom: 2px solid transparent
+  position: absolute
+.resizer-row:hover,
+.resizing
+  border-bottom: 1px dashed $color-main

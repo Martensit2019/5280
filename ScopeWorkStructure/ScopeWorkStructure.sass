@@ -1,0 +1,65 @@
+.scope-work-structure
+  &__controls
+    padding-top: 18px
+    display: flex
+    span
+      font-size: 18px
+      word-break: break-word
+    &-btns
+      display: flex
+      margin-top: auto
+    &-btn
+      width: 32px
+      height: 32px
+      border-radius: 50%
+      background-color: $color-bg-element-hover
+      padding: 6px
+      margin-left: 12px
+      cursor: pointer
+  &__table
+    height: 190px
+    margin-top: 20px
+    &:deep(.assembly-object-table tr)
+      grid-template-columns: 80px 200px auto 90px 136px 36px
+    &:deep(.assembly-object-table th)
+      height: 36px
+    &:deep(.assembly-object-table td)
+      height: auto
+      .cell
+        text-align: start
+        padding-top: 3px
+        padding-bottom: 3px
+      &:last-child
+        .cell
+          padding: 0
+          justify-content: center
+  &__default
+    border: 1px solid $color-border-block-secondary
+    min-height: 103px
+    display: flex
+    justify-content: center
+    align-items: center
+    p
+      font-size: 14px
+      font-weight: 600
+      color: $color-text-light
+  &__wrapper-btn
+    background: none
+    color: inherit
+    border: none
+    padding: 0
+.print-nine-elements
+  :deep(.assembly-object-table tr)
+    grid-template-columns: 45px 45px 90px auto 90px 120px 80px 90px 40px
+.print-five-elements
+  :deep(.assembly-object-table tr)
+    grid-template-columns: 45px 90px auto 90px 120px
+.print-four-elements
+  :deep(.assembly-object-table tr)
+    grid-template-columns: 100px auto 90px 120px
+.print-three-elements
+  :deep(.assembly-object-table tr)
+    grid-template-columns: auto 90px 120px
+
+.disabled
+  color: $color-fill-icon
